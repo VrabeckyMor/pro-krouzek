@@ -15,17 +15,17 @@ export default function Clicker() {
     };
 
     return (
-        <div>
-            <div className="text-2xl font-bold">
+        <div className="flex flex-col items-center justify-center h-screen">
+            <div className="text-2xl font-bold content-center text-center">
                 <h1>Clicker</h1>
                 <div>
-                    <button className="p-5 bg-blue-500 hover:p-6" onClick={plus1}>
+                    <button className="mt-10 rounded-sm p-5 bg-blue-500 hover:p-10 hover:rounded-3xl hover:mt-0 transition-all duration-500 ease-in-out" onClick={plus1}>
                         +1
                     </button>
-                    <button className="p-5 bg-blue-500 hover:p-6" onClick={reset}>
+                    <button className="mt-10 rounded-sm p-5 bg-blue-500 hover:p-10 hover:rounded-3xl hover:mt-0 transition-all duration-500 ease-in-out" onClick={reset}>
                         reset
                     </button>
-                    <button className="p-5 bg-blue-500 hover:p-6" onClick={minus1}>
+                    <button className="mt-10 rounded-sm p-5 bg-blue-500 hover:p-10 hover:rounded-3xl hover:mt-0 transition-all duration-500 ease-in-out" onClick={minus1}>
                         -1
                     </button>
                 </div>
