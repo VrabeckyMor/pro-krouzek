@@ -1,9 +1,9 @@
 "use client";
 import Clicker from "./Clicker";
-import { useState } from "react";
+import Todo from "./todo";
 
 export default function Home() {
   return (
-    <Clicker />
+    <Todo />
   );
 }
