@@ -18,7 +18,7 @@ export default function Todo() {
     }
 
     async function postNew() {
-        await fetch('/api/getAll', {
+        await fetch('/api/create', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ title, description })
@@ -30,7 +30,7 @@ export default function Todo() {
 
     async function deleteTodo(id: number) {
         if (!id) return;
-        await fetch('/api/getAll', {
+        await fetch('/api/delete', {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id })
@@ -40,7 +40,7 @@ export default function Todo() {
 
     async function completeTodo(id: number) {
         if (!id) return;
-        await fetch('/api/getAll', {
+        await fetch('/api/complete', {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id })
